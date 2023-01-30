@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(135deg ,#903108 0%, #20665f 44%, #03383c 100%);
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay{
+    background-color: black;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.box, .overlay{
+    top: 50%;
+    border-radius: 2rem 2rem 0 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 75vh;
+    width: 25vw;
+}
+
+.box{
+    border: 0.1rem solid gray;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 1;
+    color: white;
+    border-bottom: 2rem solid white;
+}
+
+.heading{
+    padding: 1rem;
+    height: 5rem;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    
+}
+
+.form{
+    justify-content: space-between;
+    height: 23rem;
+}
+
+input{
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: none;
+    border-bottom: #20665f 0.4rem solid;
+}
+
+input:focus{
+    transition: all 1s;
+    border-bottom: #903108 0.4rem solid;
+}
+
+button{
+    background-color: #20665f;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 2rem;
+    width: 7rem;
+    padding: 0.4rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem;
+}
+
+button:hover{
+    transition: all 0.3s;
+    background-color: #903108;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #20665f;
+}
+
+.no-account div{ 
+    color: gray;
+    margin: 1rem;
+}
+
+.invalid-warning{
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: red;
+    margin-top: 0.4rem;
+}
+
+.invalid-info, .invalid-info:focus, .invalid-info:hover{
+    border-bottom: red 0.4rem solid;
+}

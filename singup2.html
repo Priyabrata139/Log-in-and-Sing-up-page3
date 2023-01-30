@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="formdiv">
+      <form action="" class="form" id="form" style="height: 450px">
+        <table style="height: 430px">
+          <tr>
+            <td style="height: 30px; text-align: center">
+              <div><h1>SING UP</h1></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 45px; text-align: center">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <div class="entermail hidden" id="noname" >Enter name</div>
+              <!-- <div class="wrongmail" id="alreadyexsistmailid" hidden>Already exsits mail id</div> -->
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 45px; text-align: center">
+              <input type="email" name="" id="email" placeholder="Email" />
+              <div class="entermail hidden" id="nomail">Enter mail id</div>
+              <div class="emailalreadyexsists hidden" id="alreadyexsistmailid">
+                Email alredy exsists
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 45px; text-align: center">
+              <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="Password"
+                
+              />
+              <div class="enterpassword hidden " id="nopassword" >
+                Enter password
+              </div>
+              <!-- <div class="wrongpassword" hidden>Wrong password</div> -->
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 40px">
+              <div>
+                <!-- <a href="./index2.html"> -->
+                  <button type="submit" class="singupbutton">SIGN UP</button>
+                <!-- </a> -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 40px">
+              <div>
+                <a href="./index2.html">
+                  <button class="loginbutton" type="button">LOGIN</button>
+                </a>
+                <!-- <button class="loginbutton" type="button">LOGIN</button> -->
+              </div>
+
+              <div><h3>Already have an account ?</h3></div>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+  <script src="singupscript.js"></script>
+</html>
